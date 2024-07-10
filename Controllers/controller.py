@@ -1,8 +1,8 @@
-import Controller.commands as com
-
+import Controllers.commands as com
+import UI.menu as ui
 def start():
     while True:
-        ui.menu_console()
+        ui.menu()
         user_input = input()
         if user_input == '1':
             com.show("all")
